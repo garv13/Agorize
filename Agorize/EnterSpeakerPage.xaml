@@ -10,30 +10,113 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
-        <Grid x:Name="LoadingGrid" Background="#000000" Visibility="Collapsed">
-            <Image x:Name="RecordingIcon" Source="https://s-media-cache-ak0.pinimg.com/originals/e5/62/65/e562658de45f6ea980b7f91e599aeab8.gif"/>
-            <TextBlock x:Name="LoadingText" Text="Please wait While We Process the recording" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" FontFamily="baskerville" TextWrapping="WrapWholeWords" TextAlignment="Center" FontSize="30"/>
-        </Grid>
 
         <Grid x:Name="SpeakerGrid" Background="#E5E5E5">
-            <Image Source="Assets/07.jpg" Height="200" Width="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,56,0,0"/>
-            <Image Source="Assets/07.jpg" Height="200" Width="400" Margin="10,129,870,391" RenderTransformOrigin="0.672,0.358"/>
-            <Image Source="Assets/07.jpg" Height="200" Width="400" Margin="10,129,870,151" RenderTransformOrigin="0.672,0.358"/>
-            <Image Source="Assets/07.jpg" Height="200" Width="400" Margin="10,129,870,-100" RenderTransformOrigin="0.672,0.358"/>
-            <Image Source="Assets/07.jpg" Height="200" Width="400" Margin="10,129,870,-350" RenderTransformOrigin="0.672,0.358"/>
-            <TextBox x:Name="TextBlock1" Text="Start Recording" Height="100" Width="400" TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Comic Sans MS" Foreground="Black" VerticalAlignment="Bottom" FontSize="40"/>
-            <TextBox x:Name="TextBlock" Text="Start Recording" Height="100" Width="400" TextAlignment="Center" HorizontalAlignment="Center" FontFamily="Comic Sans MS" Foreground="Black" VerticalAlignment="Bottom" FontSize="40"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.01*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.01*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="2" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider x:Name="slider" Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB" RequestedTheme="Dark" />
+
+            </Grid>
+          
+            <Grid Grid.Row="3" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider  Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB"   RequestedTheme="Dark" />
+            </Grid>
+          
+            <Grid Grid.Row="4" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider  Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB"   RequestedTheme="Dark" />
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider  Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB"   RequestedTheme="Dark" />
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider  Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB"   RequestedTheme="Dark" />
+            </Grid>
+            <Grid Grid.Row="7" Grid.Column="1" Background="#FF43a047" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Assets/PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png"   />
+                <Slider  Margin="10" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Center" Foreground="#FFF5F8FB"   RequestedTheme="Dark" />
+            </Grid>
 
 
-            <TextBox HorizontalAlignment="Left" Margin="924,100,0,0" TextWrapping="Wrap" PlaceholderText="Enter Name" VerticalAlignment="Top" Height="54" Width="307"/>
-            <TextBox HorizontalAlignment="Left" Margin="924,200,0,0" TextWrapping="Wrap" PlaceholderText="Enter Name" VerticalAlignment="Top" Height="54" Width="307"/>
-            <TextBox HorizontalAlignment="Left" Margin="924,300,0,0" TextWrapping="Wrap" PlaceholderText="Enter Name" VerticalAlignment="Top" Height="54" Width="307"/>
-            <TextBox HorizontalAlignment="Left" Margin="924,400,0,0" TextWrapping="Wrap" PlaceholderText="Enter Name" VerticalAlignment="Top" Height="54" Width="307"/>
-            <TextBox HorizontalAlignment="Left" Margin="924,500,0,0" TextWrapping="Wrap" PlaceholderText="Enter Name" VerticalAlignment="Top" Height="54" Width="307"/>
+            <TextBlock Text="Drag Speaker here" TextAlignment="Center"  Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10"/>
+            <TextBlock Text="Drag Speaker here" TextAlignment="Center"  Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10"/>
+            <TextBlock Text="Drag Speaker here" TextAlignment="Center"  Grid.Row="5" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10"/>
+            <TextBlock Text="Drag Speaker here" TextAlignment="Center"  Grid.Row="7" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="10"/>
 
+            <Grid Grid.Row="2" Grid.Column="3" Background="#FFfbc02d" Margin="10" >
+                
+                <TextBox  Text="Akshay" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="3" Background="#FFfbc02d" Margin="10" >
 
+                <TextBox  Text="Srishti" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="3" Background="#FFfbc02d" Margin="10" >
 
+                <TextBox  Text="Varnika" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="2" Background="#FFfbc02d" Margin="10" >
+
+                <TextBox  Text="Jacques" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+
+            <Grid Grid.Row="6" Grid.Column="2" Background="#FFfbc02d" Margin="10" >
+
+                <TextBox  Text="Jan" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="3" Background="#FFfbc02d" Margin="10" >
+
+                <TextBox  Text="Garv" TextAlignment="Center" FontSize="25" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" BorderBrush="#007A7A7A"/>
+            </Grid>
+            
         </Grid>
+        
+        
         
     </Grid>
 </Page>
