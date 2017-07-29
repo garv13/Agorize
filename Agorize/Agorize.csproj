@@ -121,6 +121,8 @@
     <Content Include="Assets\07.jpg" />
     <Content Include="Assets\Play-Button-PNG-Transparent.png" />
     <Content Include="Assets\PlaybuttoN_b93489fd-cedf-46d9-92f3-22fdf3725bf0_grande.png" />
+    <Content Include="Assets\print1600.png" />
+    <Content Include="Assets\save-filled.png" />
     <Content Include="Assets\unnamed.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
